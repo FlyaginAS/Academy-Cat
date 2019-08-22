@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Oswald';
-  src: url('../resources/fonts/oswald-bold-webfont.woff2') format('woff2'),
-  url('../resources/fonts/oswald-bold-webfont.woff') format('woff');
+  src: url('../resources/fonts/Oswald-Bold.ttf') format('truetype');
+  //url('../resources/fonts/Oswald-Regular.ttf') format('ttf');
   font-weight: bold;
   font-style: normal;
 
@@ -9,11 +9,14 @@
 
 @font-face {
   font-family: 'Oswald';
-  src: url('../resources/fonts/oswald-regular-webfont.woff2') format('woff2'),
-  url('../resources/fonts/oswald-regular-webfont.woff') format('woff');
+  src: url('../resources/fonts/Oswald-Regular.ttf') format('truetype');
+  //url('../resources/fonts/oswald-regular-webfont.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 
+}
+body{
+  font: 20px/20px "Oswald", serif;  //специально другое семейство для отслеж ошиб
 }
 
 

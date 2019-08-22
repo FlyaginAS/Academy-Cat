@@ -1,0 +1,50 @@
+.page-header__logo-section{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding:0 20px;
+  justify-content: space-between;
+}
+.page-header__main-menu{
+
+}
+.page-header__logo-link{
+
+}
+.page-header__logo{
+
+}
+.page-header__title{
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size:24px;
+}
+.page-header__span-cat{
+  font-weight: bold;
+}
+.page-header__button{
+  border: none;
+  background-color: white;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.page-header__list{
+  list-style: none;
+  margin:0;
+  padding:0;
+
+}
+.page-header__item{
+  border-top: 1px solid #e6e6e6;
+}
+.page-header__link{
+  display: block;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-size:20px;
+  color: black;
+  line-height: 66px;
+}
