@@ -1,0 +1,36 @@
+.categories{
+  padding: 0px 20px;
+}
+.categories__list{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.categories__item{
+  background-color:#f2f2f2;
+  width: 280px;
+  margin:0 auto;
+}
+.categories__title{
+  font-size:24px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+.categories__title--slim{
+
+}
+.categories__title--mass{
+
+}
+.categories__description{
+  font: 14px/18px Arial, sans-serif;
+  padding-right: 37px;
+}
+.categories__link{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 16px;
+}
