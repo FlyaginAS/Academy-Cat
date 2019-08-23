@@ -417,23 +417,107 @@ body {
 .categories__item {
   background-color: #f2f2f2;
   width: 280px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 25px;
+  padding-left: 20px; }
 
 .categories__title {
+  position: relative;
   font-size: 24px;
   line-height: 24px;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-weight: normal;
   text-transform: uppercase;
   text-align: center; }
+  .categories__title:before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 50px;
+    height: 50px;
+    top: 18px;
+    left: 0px;
+    background-color: #68b738;
+    border-radius: 50%; }
+  .categories__title:after {
+    position: absolute;
+    display: inline-block;
+    content: ''; }
+
+.categories__title--slim:after {
+  content: url("../resources/img/img-opt/index/mobile/cat-fit.svg");
+  width: 35px;
+  height: 49px;
+  left: 10px;
+  top: 12px; }
+
+.categories__title--mass:after {
+  content: url("../resources/img/img-opt/index/mobile/cat-pro.svg");
+  width: 67px;
+  height: 28px;
+  left: -10px; }
 
 .categories__description {
   font: 14px/18px Arial, sans-serif;
-  padding-right: 37px; }
+  padding-right: 35px; }
 
 .categories__link {
+  position: relative;
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
-  font-size: 16px; }
+  font-size: 16px;
+  border-top: 1px solid #d9d9d9;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 25px; }
+  .categories__link:before {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 11px;
+    top: 18px;
+    left: 100px;
+    content: url("../resources/img/img-opt/index/mobile/right-arrow.svg"); }
+
+.advantages {
+  padding: 20px; }
+
+.advantage__title {
+  font-size: 36px;
+  font-weight: normal; }
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.advantages__item {
+  position: relative;
+  font: 14px/18px Arial, sans-serif;
+  padding-left: 80px;
+  padding-bottom: 20px; }
+  .advantages__item:before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0; }
+
+.advantages__item--vitamins:before {
+  background: #68b738 url("../resources/img/img-opt/index/mobile/advantage-1.png") no-repeat center; }
+
+.advantages__item--useful:before {
+  background: #68b738 url("../resources/img/img-opt/index/mobile/advantage-2.png") no-repeat center; }
+
+.advantages__item--eats:before {
+  background: #68b738 url("../resources/img/img-opt/index/mobile/advantage-3.png") no-repeat center; }
+
+.advantages__item--time:before {
+  background: #68b738 url("../resources/img/img-opt/index/mobile/advantage-4.png") no-repeat center; }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,47 @@
+.advantages{
+  padding:20px;
+}
+.advantage__title{
+  font-size:36px;
+  font-weight: normal;
+}
+.advantages__list{
+  list-style:none;
+  margin:0;
+  padding: 0;
+
+}
+.advantages__item{
+  position: relative;
+font: 14px/18px Arial, sans-serif;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  &:before{
+    position: absolute;
+    content:'';
+    width:60px;
+    height: 60px;
+    top:0;
+    left: 0;
+  }
+}
+.advantages__item--vitamins{
+  &:before{
+    background:#68b738 url("../resources/img/img-opt/index/mobile/advantage-1.png") no-repeat center;
+  }
+}
+.advantages__item--useful{
+  &:before{
+    background:#68b738 url("../resources/img/img-opt/index/mobile/advantage-2.png") no-repeat center;
+  }
+}
+.advantages__item--eats{
+  &:before{
+    background:#68b738 url("../resources/img/img-opt/index/mobile/advantage-3.png") no-repeat center;
+  }
+}
+.advantages__item--time{
+  &:before{
+    background:#68b738 url("../resources/img/img-opt/index/mobile/advantage-4.png") no-repeat center;
+  }
+}
