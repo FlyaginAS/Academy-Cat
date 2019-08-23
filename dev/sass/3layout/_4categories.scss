@@ -86,3 +86,94 @@
     content:url("../resources/img/img-opt/index/mobile/right-arrow.svg");
   }
 }
+/*tablet****************************************************************************************/
+@media all and (min-width: 768px){
+  .categories{
+    padding: 0;
+  }
+  .categories__list{
+  }
+  .categories__item{
+    background-color:#f2f2f2;
+    width: 708px;
+    margin:0 auto;
+    margin-top: 25px;
+    padding-left: 55px;
+    min-height:370px;
+  }
+  .categories__title{
+    position: relative;
+    font-size:36px;
+    line-height: 36px;
+    margin:0;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: left;
+
+    &:before{
+      position: absolute;
+      display:inline-block;
+      content: '';
+      //border: 1px solid red;
+      width:200px;
+      height: 200px;
+      top:80px;
+      left: 400px;
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+    &:after{
+      position: absolute;
+      display:inline-block;
+      content: '';
+    }
+  }
+  .categories__title--slim{
+    &:after{
+      content: url("../resources/img/img-opt/index/mobile/cat-fit.svg");
+      width:140px;
+      height: 194px;
+      left:430px;
+      top:60px;
+    }
+
+  }
+  .categories__title--mass{
+    &:after{
+      content: url("../resources/img/img-opt/index/mobile/cat-pro.svg");
+      width:268px;
+      height: 112px;
+      top:120px;
+      left:350px;
+    }
+  }
+  .categories__description{
+    font: 16px/24px Arial, sans-serif;
+    //padding-right: 35px;
+    width:410px;
+  }
+  .categories__link{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    border-top: none;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    &:before{
+      display: block;
+      position:absolute;
+      width:24px;
+      height: 11px;
+      top:18px;
+      left:120px;
+      content:url("../resources/img/img-opt/index/mobile/right-arrow.svg");
+    }
+  }
+
+}

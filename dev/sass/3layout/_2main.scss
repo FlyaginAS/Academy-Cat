@@ -2,3 +2,11 @@
   width: 320px;
   margin:0 auto;
 }
+/*tablet****************************************************************************************/
+@media all and (min-width: 768px){
+  .page-main{
+    width: 768px;
+    padding:0 30px;
+  }
+
+}

@@ -48,3 +48,51 @@
   color: black;
   line-height: 66px;
 }
+/*tablet****************************************************************************************/
+@media all and (min-width: 768px){
+  .page-header__logo-section{
+   display: block;
+    width: 173px;
+    margin:0;
+    padding:0;
+  }
+  .page-header__main-menu{
+    margin-left: auto;
+    width:440px;
+  }
+  .page-header__logo-link{
+    width:173px;
+    height: 58px;
+
+  }
+  .page-header__logo{
+    width:173px;
+    height: 58px;
+  }
+  .page-header__title{
+    display:none;
+  }
+  .page-header__span-cat{
+  }
+  .page-header__button{
+    display: none;
+  }
+  .page-header__list{
+    display: flex;
+    justify-content: space-between;
+    margin-top:22px;
+
+  }
+  .page-header__item{
+    border:none;
+  }
+  .page-header__link{
+    display: block;
+    font-size:18px;
+    line-height: 18px;
+  }
+  .page-header__link--active{
+    box-shadow: 0px 10px 0px white, 0px 13px 0px #68b738;
+  }
+
+}
