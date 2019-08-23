@@ -691,6 +691,60 @@ body {
   background: #68b738 url("../resources/img/img-opt/index/mobile/advantage-4.png") no-repeat center; }
 
 /*tablet****************************************************************************************/
+@media all and (min-width: 768px) {
+  .advantages {
+    padding: 0px;
+    border-bottom: 1px solid #e6e6e6; }
+
+  .advantage__title {
+    font-size: 60px;
+    font-weight: normal; }
+
+  .advantages__list {
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between; }
+
+  .advantages__item {
+    position: relative;
+    font: 16px/24px Arial, sans-serif;
+    padding: 0;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    width: 250px;
+    height: 235px; }
+    .advantages__item:before {
+      position: absolute;
+      content: '';
+      width: 80px;
+      height: 80px;
+      top: 0;
+      left: 0; }
+    .advantages__item:after {
+      position: absolute;
+      display: block;
+      font: 260px/230px Oswald, sans-serif;
+      color: #f2f2f2;
+      top: -20px;
+      left: 120px;
+      z-index: -1; }
+
+  .advantages__item--vitamins:after {
+    content: '1'; }
+
+  .advantages__item--useful:after {
+    content: '2';
+    left: 120px; }
+
+  .advantages__item--eats:after {
+    content: '3';
+    left: 120px; }
+
+  .advantages__item--time:after {
+    content: '4';
+    left: 120px; } }
 .before-after {
   background-color: #f2f2f2;
   padding: 20px; }
