@@ -628,4 +628,24 @@ body {
 .hidden {
   display: none; }
 
+.contacts__description {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; }
+
+.contacts__slogan {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 140px; }
+
+.contacts-wrap {
+  width: 140px; }
+
+.contacts__street {
+  font: 14px/20px Arial, sans-serif; }
+
+.contacts__city {
+  font: 14px/20px Arial, sans-serif; }
+
 /*# sourceMappingURL=index.css.map */
