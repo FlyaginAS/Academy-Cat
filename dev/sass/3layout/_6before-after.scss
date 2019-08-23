@@ -1,0 +1,134 @@
+@charset "utf-8";
+.before-after{
+  background-color: #f2f2f2;
+  padding:20px;
+}
+.before-after__title{
+  font-size:36px;
+  line-height: 46px;
+  margin:0;
+  font-weight:normal;
+}
+.before-after__wrapper{
+
+}
+.before-after__wrapper-about{
+
+}
+.before-after__description{
+  font: 14px/18px Arial, sans-serif;
+  padding-right: 10px;
+}
+.before-after__wrapper-example{
+  display: flex;
+  justify-content: space-between;
+}
+.before-after__example{
+  position:relative;
+  font-size:24px;
+  font-weight:normal;
+  width:125px;
+  height: 55px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
+}
+.before-after__example--kg{
+  &:before{
+    position: absolute;
+    font:12px/12px Arial, sans-serif;
+    content:"снижение \0a веса";
+    white-space: pre;
+    display: block;
+    color: #444444;
+    bottom:-18px;
+    right:20px;
+    background-color: #f2f2f2;
+    padding:0 15px;
+  }
+}
+.before-after__example--days{
+  &:before{
+    position: absolute;
+    font:12px/12px Arial, sans-serif;
+    content:"затрачено \0a времени";
+    white-space: pre;
+    display: block;
+    color: #444444;
+    bottom:-18px;
+    right:20px;
+    background-color: #f2f2f2;
+    padding:0 15px;
+  }
+
+}
+.before-after__money{
+  font-size:16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.before-after__money-span{
+
+}
+.before-after__wrapper-photo{
+  margin-top:30px;
+
+}
+.before-after__photo-before{
+  width:100%;
+  height:240px;
+}
+.before-after__photo-after{
+  width:100%;
+  height:240px;
+
+  //display:none;
+}
+.before-after__wrapper-range{
+padding-left:15px;
+}
+.before-after__button{
+  font-size:16px;
+  text-transform: uppercase;
+
+}
+.before-after__button--before{
+}
+.before-after__button--after{
+
+}
+.before-after__range{
+  visibility:hidden;
+  position: relative;
+  &:before{
+    visibility: visible;
+    position: absolute;
+    display: inline-block;
+    content:'';
+    width:84px;
+    height:14px;
+    background-color: white;
+    border:1px solid #cdcdcd;
+    border-radius: 5px;
+    top:7px;
+    left:20px;
+  }
+  &:after{
+    visibility: visible;
+    position: absolute;
+    display: inline-block;
+    content:'';
+    width:35px;
+    height:8px;
+    background-color: #68b738;
+    border:1px solid #cdcdcd;
+    border-radius: 3px;
+    top:10px;
+    left:24px;
+
+  }
+}
+.hidden{
+  display:none;
+}
