@@ -8,5 +8,11 @@
     width: 768px;
     padding:0 30px;
   }
-
+}
+/*desktop****************************************************************************************/
+@media all and (min-width: 1440px){
+  .page-main{
+    width: 1440px;
+    padding:0 110px;
+  }
 }

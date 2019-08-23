@@ -134,5 +134,298 @@ padding-left:15px;
 }
 /*tablet****************************************************************************************/
 @media all and (min-width: 768px){
+  .before-after{
+    background:linear-gradient(to bottom, white, white 50% , #f2f2f2 50% , #f2f2f2 100% );
+    padding:20px;
+  }
+  .before-after__title{
+    font-size:60px;
+    line-height: 60px;
+    margin:0;
+    font-weight:normal;
+  }
+  .before-after__wrapper{
+
+  }
+  .before-after__wrapper-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: min-content;
+  }
+  .before-after__description{
+    font: 16px/24px Arial, sans-serif;
+    padding-right: 10px;
+    grid-column: 1/4;
+  }
+  .before-after__wrapper-example{
+    display: flex;
+    justify-content: space-between;
+    width:360px;
+  }
+  .before-after__example{
+    position:relative;
+    font-size:30px;
+    font-weight:normal;
+    width:160px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+  }
+  .before-after__example--kg{
+    &:before{
+      position: absolute;
+      font:12px/12px Arial, sans-serif;
+      content:"снижение \0a веса";
+      white-space: pre;
+      display: block;
+      color: #444444;
+      bottom:-18px;
+      right:35px;
+      background-color: white;
+      padding:0 15px;
+    }
+  }
+  .before-after__example--days{
+    &:before{
+      position: absolute;
+      font:12px/12px Arial, sans-serif;
+      content:"затрачено \0a времени";
+      white-space: pre;
+      display: block;
+      color: #444444;
+      bottom:-18px;
+      right:35px;
+      background-color: white;
+      padding:0 15px;
+    }
+
+  }
+  .before-after__money{
+    font-size:20px;
+    line-height: 30px;
+    padding-top:20px;
+    display: inline-block;
+    width:180px;
+    grid-column: 2/4;
+    justify-self: end;
+    text-align: end;
+  }
+  .before-after__money-span{
+
+  }
+  .before-after__wrapper-photo{
+    margin-top:30px;
+
+  }
+  .before-after__photo-before{
+    width:677px;
+    height:500px;
+  }
+  .before-after__photo-after{
+    width:545px;
+    height:500px;
+    padding-left:100px;
+  }
+  .before-after__wrapper-range{
+    margin-left: 0px;
+  }
+  .before-after__button{
+    font-size:16px;
+    text-transform: uppercase;
+
+  }
+  .before-after__button--before{
+  }
+  .before-after__button--after{
+
+  }
+  .before-after__range{
+    visibility:hidden;
+    position: relative;
+    width:470px;
+    &:before{
+      visibility: visible;
+      position: absolute;
+      display: inline-block;
+      content:'';
+      width:428px;
+      height:6px;
+      background-color: #dcdcdc;
+      border:none;
+      border-radius: 5px;
+      top:7px;
+      left:20px;
+    }
+    &:after{
+      visibility: visible;
+      position: absolute;
+      display: inline-block;
+      content:'';
+      width:34px;
+      height:34px;
+      background: radial-gradient(#68b738, #68b738 30%,white 30%, white 100%);
+      border:1px solid #cdcdcd;
+      border-radius: 50%;
+      top:-5px;
+      left:200px;
+
+    }
+  }
+  .hidden{
+    display:none;
+  }
+
+}
+/*desk****************************************************************************************/
+@media all and (min-width: 1440px){
+  .before-after{
+    background:white;
+    padding:20px;
+  }
+  .before-after__title{
+    font-size:60px;
+    line-height: 60px;
+    margin:0;
+    font-weight:normal;
+  }
+  .before-after__wrapper{
+
+  }
+  .before-after__wrapper-about{
+    width:435px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+  }
+  .before-after__description{
+    font: 16px/24px Arial, sans-serif;
+    padding-right: 10px;
+    grid-column: 1/4;
+  }
+  .before-after__wrapper-example{
+    display: flex;
+    justify-content: space-between;
+    width:360px;
+  }
+  .before-after__example{
+    position:relative;
+    font-size:30px;
+    font-weight:normal;
+    width:160px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+  }
+  .before-after__example--kg{
+    &:before{
+      position: absolute;
+      font:12px/12px Arial, sans-serif;
+      content:"снижение \0a веса";
+      white-space: pre;
+      display: block;
+      color: #444444;
+      bottom:-18px;
+      right:35px;
+      background-color: white;
+      padding:0 15px;
+    }
+  }
+  .before-after__example--days{
+    &:before{
+      position: absolute;
+      font:12px/12px Arial, sans-serif;
+      content:"затрачено \0a времени";
+      white-space: pre;
+      display: block;
+      color: #444444;
+      bottom:-18px;
+      right:35px;
+      background-color: white;
+      padding:0 15px;
+    }
+
+  }
+  .before-after__money{
+    font-size:20px;
+    line-height: 30px;
+    padding-top:20px;
+    display: inline-block;
+    width:280px;
+    grid-column: 1/3;
+    grid-row:3;
+    justify-self: start;
+    text-align: start;
+  }
+  .before-after__money-span{
+
+  }
+  .before-after__wrapper-photo{
+    margin-top:-400px;
+
+  }
+  .before-after__photo-before{
+    width:677px;
+    height:500px;
+    display: block;
+    margin-left:500px;
+  }
+  .before-after__photo-after{
+    width:545px;
+    height:500px;
+    padding-left:100px;
+    margin-left:500px;
+  }
+  .before-after__wrapper-range{
+    margin-left: 500px;
+  }
+  .before-after__button{
+    font-size:16px;
+    text-transform: uppercase;
+
+  }
+  .before-after__button--before{
+  }
+  .before-after__button--after{
+
+  }
+  .before-after__range{
+    visibility:hidden;
+    position: relative;
+    width:470px;
+    &:before{
+      visibility: visible;
+      position: absolute;
+      display: inline-block;
+      content:'';
+      width:428px;
+      height:6px;
+      background-color: #dcdcdc;
+      border:none;
+      border-radius: 5px;
+      top:7px;
+      left:20px;
+    }
+    &:after{
+      visibility: visible;
+      position: absolute;
+      display: inline-block;
+      content:'';
+      width:34px;
+      height:34px;
+      background: radial-gradient(#68b738, #68b738 30%,white 30%, white 100%);
+      border:1px solid #cdcdcd;
+      border-radius: 50%;
+      top:-5px;
+      left:200px;
+
+    }
+  }
+  .hidden{
+    display:none;
+  }
 
 }

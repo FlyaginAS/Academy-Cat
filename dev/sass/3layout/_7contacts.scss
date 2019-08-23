@@ -30,5 +30,36 @@ font: 14px/20px Arial, sans-serif;
 }
 /*tablet****************************************************************************************/
 @media all and (min-width: 768px){
+  .contacts{
+
+  }
+  .contacts__description{
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contacts__slogan{
+    font-size:20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    width:140px;
+  }
+  .contacts-wrap{
+    width: 160px;
+  }
+  .contacts__street{
+    font: 16px/20px Arial, sans-serif;
+  }
+  .contacts__city{
+    font: 16px/20px Arial, sans-serif;
+
+  }
+  .contacts__map{
+    width:768px;
+    margin-left:-30px;
+  }
+  .contacts__img-map{
+
+  }
 
 }

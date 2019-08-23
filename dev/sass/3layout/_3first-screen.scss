@@ -80,3 +80,50 @@
   }
 
 }
+/*desktop****************************************************************************************/
+@media all and (min-width: 1440px){
+  .first-screen{
+    background: url('../resources/img/img-opt/index/desk/index-background-desktop.jpg') no-repeat right;
+    position:relative;
+    width:1440px;
+  }
+  .first-screen__title{
+    color: black;
+    font-size: 60px;
+    line-height: 60px;
+    margin:0;
+    margin-left:90px;
+    width:425px;
+    text-align: left;
+  }
+  .first-screen__slogan{
+    color: black;
+    font-size:20px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left:90px;
+    margin-top:40px;
+  }
+  .first-screen__picture{
+    display: block;
+    margin:30px auto 0;
+    margin-top:-150px;
+  }
+  .first-screen__program{
+    position: absolute;
+    top:250px;
+    left:90px;
+    display: block;
+    width: 245px;
+    height: 52px;
+    margin:0 auto;
+    background-color: #68b738;
+    font-size:20px;
+    color: white;
+    line-height: 52px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+  }
+
+}
