@@ -160,3 +160,88 @@ display: flex;
   }
 
 }
+/*desktop****************************************************************************************/
+@media all and (min-width: 1440px){
+  .page-footer{
+    width:1440px;
+    height:150px;
+    padding:30px;
+    //margin:0 auto;
+    background-color:#f2f2f2;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer__logo{
+    display: block;
+    width: min-content;
+  }
+  .page-footer__logo-link{
+    display: inline-block;
+    margin:0;
+
+  }
+  .page-footer__social{
+    width:130px;
+    height: 30px;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .page-footer__link{
+    position: relative;
+    width:35px;
+    height:35px;
+    visibility:hidden;
+    display: inline-block;
+    &:before{
+      display: block;
+      position: absolute;
+      content:'';
+      visibility: visible;
+      width:35px;
+      height:35px;
+      //border:1px solid red;
+    }
+  }
+  .page-footer__link--vk{
+    &:before{
+      background: url("../resources/img/img-opt/index/mobile/vk.svg") no-repeat center;
+    }
+  }
+  .page-footer__link--insta{
+    &:before{
+      background: url("../resources/img/img-opt/index/mobile/insta.svg") no-repeat center;
+    }
+  }
+  .page-footer__link--fb{
+    &:before{
+      background: url("../resources/img/img-opt/index/mobile/fb.svg") no-repeat center;
+    }
+  }
+
+  .page-footer__academy{
+    width:160px;
+  }
+  .page-footer__link--academy{
+    display:block;
+    position: relative;
+    width:160px;
+    height:80px;
+    visibility: visible;
+    text-decoration: none;
+    color:#444444;
+    font:16px/80px Arial, sans-serif;
+    &:before{
+      width:27px;
+      height:34px;
+      background: url("../resources/img/img-opt/index/mobile/htmlacademy.svg") no-repeat center;
+      top:25px;
+      right:0px;
+    }
+
+  }
+
+}
