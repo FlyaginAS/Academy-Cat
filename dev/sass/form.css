@@ -572,6 +572,18 @@ body {
   background: url("../resources/img/img-opt/form/mobile/phone.svg"); }
 
 /*tablet***************************************************************************************/
+@media all and (min-width: 768px) {
+  .user-data {
+    grid-column: 1/-1; }
+    .user-data label {
+      font-size: 20px;
+      line-height: 20px;
+      margin-left: 40px;
+      margin-right: 40px; }
+
+  .section-title {
+    font-size: 36px;
+    line-height: 36px; } }
 .comments {
   grid-column: 1/3; }
 
