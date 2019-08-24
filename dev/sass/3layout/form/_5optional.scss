@@ -1,7 +1,40 @@
 .optional{
+  grid-column: 1/3;
+  label{
+    text-transform: uppercase;
+    font-size:16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+  }
+  input{
+    position:relative;
+    width:30px;
+    height:30px;
+    margin-right:20px;
+    visibility: visible;
+    &:before{
+      position: absolute;
+      content: '';
+      display: block;
+      visibility: hidden;
+      width:30px;
+      height:30px;
+      border:1px solid #cfcfcf;
+    }
+  }
+  input:checked{
+    &:before{
+      background: url("../resources/img/img-opt/form/mobile/check.svg") no-repeat center;
+    }
+  }
 
 }
 .optional__title{
+    &:before{
+      left:160px;
+      width:140px;
+    }
 
 }
 .optional__label-sweetener{
@@ -29,8 +62,17 @@
 
 }
 .optional__submit{
-
+  width:280px;
+  height:40px;
+  border:none;
+  background-color: #68b738;
+  color: white;
+  text-transform: uppercase;
 }
 .optional__footnote{
+  font: 14px/14px Arial, sans-serif;
+  text-align: center;
+}
+@media all and (min-width: 768px){
 
 }

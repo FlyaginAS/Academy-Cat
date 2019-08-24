@@ -11,7 +11,7 @@
   }
 }
 .cat-data__wrapper-data{
-margin-bottom:20px;
+  margin-bottom:20px;
 }
 //.cat-data__label-name{
 //
@@ -20,7 +20,7 @@ margin-bottom:20px;
   padding: 15px;
   margin-left:20px;
   height: 45px;
- flex-grow:1;
+  flex-grow:1;
   text-transform: uppercase;
   border: 1px solid #e6e6e6;
 }
@@ -39,7 +39,7 @@ margin-bottom:20px;
 //.cat-data__input-years{
 //
 //}
-
+/*у инпутов не может быть псевдоэлементов так как у них нет контента*/
 .cat-data__wrapper-program{
   border: 1px solid #e6e6e6;
   padding:20px;
@@ -50,12 +50,12 @@ margin-bottom:20px;
     width:30px;
     height: 30px;
     border-radius: 50%;
-    visibility: hidden;
+    visibility: visible;
     &:before{
       position: absolute;
       content:'';
       display: block;
-      visibility: visible;
+      visibility: hidden;
       width:30px;
       height: 30px;
       border-radius: 50%;
@@ -85,3 +85,56 @@ margin-bottom:20px;
 //.cat-data__input-advice{
 //
 //}
+/*tablet*************************************************************************************/
+@media all and(min-width: 768px) {
+  .cat-data {
+    grid-column: 1/-1;
+    font-size: 20px;
+    //margin-top: 20px;
+    //label {
+    //  width: 100%;
+    //  display: flex;
+    //  align-items: center;
+    //  margin-bottom: 15px;
+    //  text-transform: uppercase;
+    //}
+  }
+  .cat-data__wrapper-data {
+    margin-bottom: 60px;
+  }
+  .cat-data__wrapper-program{
+    margin:0 40px;
+  }
+  //.section-input {
+  //  padding: 15px;
+  //  margin-left: 20px;
+  //  height: 45px;
+  //  flex-grow: 1;
+  //  text-transform: uppercase;
+  //  border: 1px solid #e6e6e6;
+  //}
+  //.cat-data__wrapper-program {
+  //  border: 1px solid #e6e6e6;
+  //  padding: 20px;
+  //  padding-bottom: 0;
+  //  input {
+  //    position: relative;
+  //    margin-right: 15px;
+  //    width: 30px;
+  //    height: 30px;
+  //    border-radius: 50%;
+  //    visibility: visible;
+  //    &:before {
+  //      position: absolute;
+  //      content: '';
+  //      display: block;
+  //      visibility: hidden;
+  //      width: 30px;
+  //      height: 30px;
+  //      border-radius: 50%;
+  //      border: 1px solid #e6e6e6;
+  //    }
+  //  }
+  //
+  //}
+}

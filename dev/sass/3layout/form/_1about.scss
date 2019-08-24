@@ -17,3 +17,25 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+/*tablet*************************************************************************************/
+@media all and (min-width: 768px) {
+  .form-program{
+    width: 708px;
+    margin:0 auto;
+    grid-template-columns: 132px 132px 132px 132px;
+    grid-column-gap: 60px;
+  }
+  .about{
+    grid-area: 1/1/1/4;
+  }
+  .about__title{
+    font-size:60px;
+    line-height: 60px;
+  }
+  .about__description{
+    font-size:20px;
+    line-height: 30px;
+    padding-left:40px;
+  }
+
+}
