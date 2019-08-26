@@ -26,7 +26,6 @@
   .contacts{
     grid-column: 1/-1;
   }
-}
   .comments__title{
     &:before{
       width:500px;
@@ -46,5 +45,26 @@
       text-transform: uppercase;
       font-size:20px;
     }
-
   }
+}
+/*desktop***************************************************************************************/
+@media all and (min-width: 1440px) {
+  .contacts {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-column-gap: 80px;
+  }
+  .comments__title {
+    &:before {
+      width: 1120px;
+      left: 200px;
+    }
+  }
+  .comments__area {
+    width: 1260px;
+    height: 174px;
+    margin-left: 0;
+  }
+}
+

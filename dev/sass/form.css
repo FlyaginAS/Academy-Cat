@@ -558,7 +558,7 @@ body {
     grid-row: 1; }
 
   .cat-data__wrapper-program {
-    margin: 0 40px;
+    margin: 0;
     grid-column: 3/6;
     grid-row: 1; } }
 .user-data {
@@ -622,6 +622,31 @@ body {
       width: 160px;
       top: 20px;
       left: 540px; } }
+/*desktop***************************************************************************************/
+@media all and (min-width: 1440px) {
+  .user-data {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-column-gap: 80px; }
+    .user-data label {
+      margin-left: 0; }
+
+  .section-title {
+    grid-column: 1/-1;
+    grid-row: 1; }
+    .section-title:before {
+      width: 780px;
+      top: 20px;
+      left: 540px; }
+
+  .user-data__label-mail {
+    grid-column: 1/3;
+    grid-row: 2; }
+
+  .user-data__label-phone {
+    grid-column: 3/6;
+    grid-row: 2; } }
 .comments {
   grid-column: 1/3; }
 
@@ -645,24 +670,40 @@ body {
 /*tablet***************************************************************************************/
 @media all and (min-width: 768px) {
   .contacts {
-    grid-column: 1/-1; } }
-.comments__title:before {
-  width: 500px;
-  left: 200px; }
+    grid-column: 1/-1; }
 
-.comments__area {
-  width: 631px;
-  height: 174px;
-  padding-left: 15px;
-  padding-top: 15px;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: normal;
-  margin-left: 30px; }
-  .comments__area::placeholder {
-    text-transform: uppercase;
-    font-size: 20px; }
+  .comments__title:before {
+    width: 500px;
+    left: 200px; }
 
+  .comments__area {
+    width: 631px;
+    height: 174px;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+    margin-left: 30px; }
+    .comments__area::placeholder {
+      text-transform: uppercase;
+      font-size: 20px; } }
+/*desktop***************************************************************************************/
+@media all and (min-width: 1440px) {
+  .contacts {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-column-gap: 80px; }
+
+  .comments__title:before {
+    width: 1120px;
+    left: 200px; }
+
+  .comments__area {
+    width: 1260px;
+    height: 174px;
+    margin-left: 0; } }
 .optional {
   grid-column: 1/3; }
   .optional label {
@@ -748,6 +789,49 @@ body {
     background-color: #68b738;
     color: white;
     text-transform: uppercase; }
+
+  .optional__footnote {
+    grid-row: 4;
+    grid-column: 3/6;
+    font: 16px/16px Arial, sans-serif;
+    text-align: left; } }
+/*desktop***************************************************************************************/
+@media all and (min-width: 1440px) {
+  .optional {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-column-gap: 80px;
+    grid-row-gap: 30px; }
+
+  .optional__title {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-column-gap: 80px; }
+    .optional__title:before {
+      width: 1090px; }
+
+  .optional__label-sweetener {
+    grid-column: 1/2;
+    grid-row: 2; }
+
+  .optional__label-water {
+    grid-column: 2/3;
+    grid-row: 2; }
+
+  .optional__label-milk {
+    grid-column: 3/4;
+    grid-row: 2; }
+
+  .optional__label-vitamins {
+    grid-column: 4/5;
+    grid-row: 2; }
+
+  .optional__submit {
+    grid-row: 4;
+    grid-column: 1/3;
+    width: 100%; }
 
   .optional__footnote {
     grid-row: 4;
