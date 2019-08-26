@@ -39,3 +39,18 @@
   }
 
 }
+/*desktop*************************************************************************************/
+@media all and (min-width: 1440px) {
+  .form-program{
+    width: 1220px;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-column-gap: 80px;
+  }
+  .about{
+    grid-area: 1/1/1/4;
+  }
+  .about__description{
+    padding-left:0;
+  }
+
+}

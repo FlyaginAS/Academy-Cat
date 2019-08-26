@@ -13,9 +13,6 @@
 .cat-data__wrapper-data{
   margin-bottom:20px;
 }
-//.cat-data__label-name{
-//
-//}
 .section-input{
   padding: 15px;
   margin-left:20px;
@@ -24,21 +21,6 @@
   text-transform: uppercase;
   border: 1px solid #e6e6e6;
 }
-//.cat-data__input-name{
-//
-//}
-//.cat-data__label-weight{
-//
-//}
-//.cat-data__input-weight{
-//
-//}
-//.cat-data__label-years{
-//
-//}
-//.cat-data__input-years{
-//
-//}
 /*у инпутов не может быть псевдоэлементов так как у них нет контента*/
 .cat-data__wrapper-program{
   border: 1px solid #e6e6e6;
@@ -68,36 +50,11 @@
     }
   }
 }
-//.cat-data__label-slim{
-//
-//}
-//.cat-data__input-slim{
-//}
-//.cat-data__label-mass{
-//
-//}
-//.cat-data__input-mass{
-//
-//}
-//.cat-data__label-advice{
-//
-//}
-//.cat-data__input-advice{
-//
-//}
 /*tablet*************************************************************************************/
 @media all and(min-width: 768px) {
   .cat-data {
     grid-column: 1/-1;
     font-size: 20px;
-    //margin-top: 20px;
-    //label {
-    //  width: 100%;
-    //  display: flex;
-    //  align-items: center;
-    //  margin-bottom: 15px;
-    //  text-transform: uppercase;
-    //}
   }
   .cat-data__wrapper-data {
     margin-bottom: 60px;
@@ -105,36 +62,28 @@
   .cat-data__wrapper-program{
     margin:0 40px;
   }
-  //.section-input {
-  //  padding: 15px;
-  //  margin-left: 20px;
-  //  height: 45px;
-  //  flex-grow: 1;
-  //  text-transform: uppercase;
-  //  border: 1px solid #e6e6e6;
-  //}
-  //.cat-data__wrapper-program {
-  //  border: 1px solid #e6e6e6;
-  //  padding: 20px;
-  //  padding-bottom: 0;
-  //  input {
-  //    position: relative;
-  //    margin-right: 15px;
-  //    width: 30px;
-  //    height: 30px;
-  //    border-radius: 50%;
-  //    visibility: visible;
-  //    &:before {
-  //      position: absolute;
-  //      content: '';
-  //      display: block;
-  //      visibility: hidden;
-  //      width: 30px;
-  //      height: 30px;
-  //      border-radius: 50%;
-  //      border: 1px solid #e6e6e6;
-  //    }
-  //  }
-  //
-  //}
+}
+/*desktop***********************************************************************************/
+@media all and(min-width: 1440px) {
+  .cat-data {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-column-gap: 80px;
+    font-size: 20px;
+    label{
+      margin-bottom:20px;
+    }
+  }
+  .cat-data__wrapper-data {
+    margin-bottom: 0;
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  .cat-data__wrapper-program{
+    margin:0 40px;
+    grid-column: 3/6;
+    grid-row: 1;
+  }
+
 }

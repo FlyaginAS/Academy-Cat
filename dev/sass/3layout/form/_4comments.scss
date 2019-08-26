@@ -21,6 +21,30 @@
     font-size:16px;
   }
 }
+/*tablet***************************************************************************************/
 @media all and (min-width: 768px){
-
+  .contacts{
+    grid-column: 1/-1;
+  }
 }
+  .comments__title{
+    &:before{
+      width:500px;
+      left:200px;
+    }
+  }
+  .comments__area{
+    width:631px;
+    height: 174px;
+    padding-left:15px;
+    padding-top:15px;
+    font-size:20px;
+    line-height: 30px;
+    font-weight: normal;
+    margin-left:30px;
+    &::placeholder{
+      text-transform: uppercase;
+      font-size:20px;
+    }
+
+  }

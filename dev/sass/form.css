@@ -472,6 +472,18 @@ body {
     font-size: 20px;
     line-height: 30px;
     padding-left: 40px; } }
+/*desktop*************************************************************************************/
+@media all and (min-width: 1440px) {
+  .form-program {
+    width: 1220px;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-column-gap: 80px; }
+
+  .about {
+    grid-area: 1/1/1/4; }
+
+  .about__description {
+    padding-left: 0; } }
 .cat-data {
   grid-column: 1/3;
   font-size: 16px;
@@ -529,6 +541,26 @@ body {
 
   .cat-data__wrapper-program {
     margin: 0 40px; } }
+/*desktop***********************************************************************************/
+@media all and (min-width: 1440px) {
+  .cat-data {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-column-gap: 80px;
+    font-size: 20px; }
+    .cat-data label {
+      margin-bottom: 20px; }
+
+  .cat-data__wrapper-data {
+    margin-bottom: 0;
+    grid-column: 1/3;
+    grid-row: 1; }
+
+  .cat-data__wrapper-program {
+    margin: 0 40px;
+    grid-column: 3/6;
+    grid-row: 1; } }
 .user-data {
   grid-column: 1/3; }
   .user-data label {
@@ -579,11 +611,17 @@ body {
       font-size: 20px;
       line-height: 20px;
       margin-left: 40px;
-      margin-right: 40px; }
+      margin-right: 40px;
+      margin-bottom: 20px; }
 
   .section-title {
     font-size: 36px;
-    line-height: 36px; } }
+    line-height: 36px;
+    margin-bottom: 60px; }
+    .section-title:before {
+      width: 160px;
+      top: 20px;
+      left: 540px; } }
 .comments {
   grid-column: 1/3; }
 
@@ -603,6 +641,27 @@ body {
   .comments__area::placeholder {
     text-transform: uppercase;
     font-size: 16px; }
+
+/*tablet***************************************************************************************/
+@media all and (min-width: 768px) {
+  .contacts {
+    grid-column: 1/-1; } }
+.comments__title:before {
+  width: 500px;
+  left: 200px; }
+
+.comments__area {
+  width: 631px;
+  height: 174px;
+  padding-left: 15px;
+  padding-top: 15px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+  margin-left: 30px; }
+  .comments__area::placeholder {
+    text-transform: uppercase;
+    font-size: 20px; }
 
 .optional {
   grid-column: 1/3; }
@@ -645,6 +704,56 @@ body {
   font: 14px/14px Arial, sans-serif;
   text-align: center; }
 
+/*tablet***************************************************************************************/
+@media all and (min-width: 768px) {
+  .optional {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(4, 162px);
+    grid-column-gap: 60px;
+    grid-row-gap: 30px; }
+    .optional label {
+      font-size: 20px; }
+
+  .optional__title {
+    grid-column: 1/-1;
+    margin-bottom: 30px; }
+    .optional__title:before {
+      left: 230px;
+      width: 470px; }
+
+  .optional__label-sweetener {
+    grid-column: 1/3;
+    grid-row: 2; }
+
+  .optional__label-water {
+    grid-column: 3/6;
+    grid-row: 2; }
+
+  .optional__label-milk {
+    grid-column: 1/3;
+    grid-row: 3; }
+
+  .optional__label-vitamins {
+    grid-column: 3/6;
+    grid-row: 3; }
+
+  .optional__submit {
+    font-size: 20px;
+    grid-row: 4;
+    grid-column: 1/3;
+    width: 280px;
+    height: 52px;
+    border: none;
+    background-color: #68b738;
+    color: white;
+    text-transform: uppercase; }
+
+  .optional__footnote {
+    grid-row: 4;
+    grid-column: 3/6;
+    font: 16px/16px Arial, sans-serif;
+    text-align: left; } }
 .contacts__description {
   padding: 20px;
   display: flex;
