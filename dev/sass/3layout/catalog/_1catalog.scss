@@ -33,3 +33,31 @@ grid-column: 1/-1;
 .banner{
   grid-column: 1/-1;
 }
+/**tablet**************************************************************************************/
+@media all and(min-width: 768px) {
+  .catalog{
+    width:768px;
+    grid-template-columns: repeat(4, 132px);
+    grid-column-gap: 60px;
+    padding:0 30px;
+  }
+  .catalog__title-products{
+    font-size:60px;
+    line-height: 60px;
+    border:none;
+    text-align: left;
+  }
+  //.catalog__list{
+  //
+  //}
+  .catalog__title-optional{
+    padding-left:30px;
+    font-size: 36px;
+  }
+  .optional-products{
+
+  }
+  .banner{
+
+  }
+}
