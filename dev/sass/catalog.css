@@ -524,6 +524,43 @@ body {
   background-color: #f2f2f2;
   color: black; }
 
+.optional-products {
+  padding: 0 20px; }
+
+.optional-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.optional-item__title {
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.optional-item__description {
+  font-size: 14px;
+  color: #444444;
+  display: flex;
+  justify-content: space-between; }
+
+.banner {
+  background: url("../resources/img/img-opt/catalog/mobile/gift-photo-mobile.jpg");
+  width: 280px;
+  height: 289px;
+  margin: 30px 20px 30px 20px;
+  position: relative; }
+  .banner:before {
+    position: absolute;
+    content: url("../resources/img/img-opt/catalog/mobile/gift.svg");
+    width: 55px;
+    height: 60px;
+    top: 50px;
+    left: 110px; }
+
+.banner-description {
+  text-align: center;
+  color: white;
+  margin-top: 170px; }
+
 .contacts__description {
   padding: 20px;
   display: flex;
