@@ -23,3 +23,22 @@
 .optional-button{
 
 }
+/**tablet****************************************************************************/
+@media all and(min-width: 768px ) {
+  .optional-products{
+  }
+  .optional-list{
+  padding:0 10px;
+  }
+  .optional-item{
+  }
+  .optional-item__title{
+    font-size:20px;
+  }
+  .optional-item__description{
+  font:16px/16px Arial, sans-serif;
+  }
+  .optional-button{
+
+  }
+}

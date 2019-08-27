@@ -85,88 +85,69 @@
 /**tablet**************************************************************************************/
 @media all and(min-width: 768px) {
   .catalog__list{
-    padding:0 20px;
+    padding:0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    grid-column-gap: 60px;
+    grid-row-gap: 140px;
   }
   .catalog__list-item{
-    display: grid;
-    grid-template-columns: repeat(2, 140px);
-  }
-  .catalog-list-item-img{
-
+    min-height: 430px;
+    padding:40px;
+    background-color:#f2f2f2;
+    grid-template-columns: repeat(2, 125px);
+    picture{
+      grid-column: 1/-1;
+      grid-row: 1;
+      justify-self: center;
+    }
+    &:nth-child(2n){
+      picture{
+        margin-top:-35px;
+      }
+    }
   }
   .catalog__list-item-title{
-    font-size: 16px;
-    font-weight:normal;
-    line-height: 20px;
-    grid-column: 2;
-    grid-row:1;
+    font-size: 20px;
+    grid-column: 1/-1;
+    grid-row:2;
+    text-align: center;
   }
   .catalog__list-item-description{
-    grid-column: 2;
-    grid-row: 1;
-    margin-top:70px;
+    border-collapse: collapse;
+    grid-column: 1/-1;
+    grid-row: 3;
+    align-self: center;
+    margin-top:30px;
+    margin-bottom:30px;
     tr{
+      border-bottom: 1px solid #cdcdcd;
       td{
-        font: 12px/16px Arial, sans-serif;
+        font: 16px/1.5 Arial, sans-serif;
         color:#444444;
-        &:first-child{
-          text-align: left;
-        }
-        &:last-child{
-          text-align: right;
-        }
       }
     }
   }
   .button{
     font: 16px/16px Oswald, sans-serif;
-    color: white;
-    text-transform: uppercase;
-    background-color: #68b738;
-    height: 40px;
-    width: 100%;
-    border:none;
     grid-column: 1/-1;
-    grid-row:2;
-  }
-  .catalog__list-item-buttton{
-
+    grid-row:4;
   }
   .item-more{
+    background-color: white;
+    align-items: end;
+    border: 1px solid #e6e6e6;
     picture{
       grid-column: 1/-1;
       grid-row: 1;
       justify-self: center;
-
     }
   }
-  .item-more__img{
-    margin-top:30px;
-    margin-bottom:30px;
-  }
   .item-more__title{
-    font-size: 16px;
-    font-weight:normal;
-    line-height: 20px;
-    text-transform: uppercase;
-    grid-column: 1/-1;
+    font-size: 20px;
     grid-row: 2;
-    text-align: center;
-    margin:0;
   }
   .item-more__description{
-    grid-column: 1/-1;
-    grid-row: 3;
-    font: 12px/16px Arial, sans-serif;
-    color:#444444;
-    text-align: center;
-    margin-bottom: 20px;
+    font: 16px/16px Arial, sans-serif;
   }
-  .item-more__button{
-    grid-column: 1/-1;
-    grid-row: 4;
-    background-color: #f2f2f2;
-    color: black;
-  }
-
 }

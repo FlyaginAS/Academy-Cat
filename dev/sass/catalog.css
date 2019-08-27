@@ -544,74 +544,63 @@ body {
 /**tablet**************************************************************************************/
 @media all and (min-width: 768px) {
   .catalog__list {
-    padding: 0 20px; }
+    padding: 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    grid-column-gap: 60px;
+    grid-row-gap: 140px; }
 
   .catalog__list-item {
-    display: grid;
-    grid-template-columns: repeat(2, 140px); }
+    min-height: 430px;
+    padding: 40px;
+    background-color: #f2f2f2;
+    grid-template-columns: repeat(2, 125px); }
+    .catalog__list-item picture {
+      grid-column: 1/-1;
+      grid-row: 1;
+      justify-self: center; }
+    .catalog__list-item:nth-child(2n) picture {
+      margin-top: -35px; }
 
   .catalog__list-item-title {
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 20px;
-    grid-column: 2;
-    grid-row: 1; }
+    font-size: 20px;
+    grid-column: 1/-1;
+    grid-row: 2;
+    text-align: center; }
 
   .catalog__list-item-description {
-    grid-column: 2;
-    grid-row: 1;
-    margin-top: 70px; }
-    .catalog__list-item-description tr td {
-      font: 12px/16px Arial, sans-serif;
-      color: #444444; }
-      .catalog__list-item-description tr td:first-child {
-        text-align: left; }
-      .catalog__list-item-description tr td:last-child {
-        text-align: right; }
+    border-collapse: collapse;
+    grid-column: 1/-1;
+    grid-row: 3;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .catalog__list-item-description tr {
+      border-bottom: 1px solid #cdcdcd; }
+      .catalog__list-item-description tr td {
+        font: 16px/1.5 Arial, sans-serif;
+        color: #444444; }
 
   .button {
     font: 16px/16px Oswald, sans-serif;
-    color: white;
-    text-transform: uppercase;
-    background-color: #68b738;
-    height: 40px;
-    width: 100%;
-    border: none;
     grid-column: 1/-1;
-    grid-row: 2; }
+    grid-row: 4; }
 
-  .item-more picture {
-    grid-column: 1/-1;
-    grid-row: 1;
-    justify-self: center; }
-
-  .item-more__img {
-    margin-top: 30px;
-    margin-bottom: 30px; }
+  .item-more {
+    background-color: white;
+    align-items: end;
+    border: 1px solid #e6e6e6; }
+    .item-more picture {
+      grid-column: 1/-1;
+      grid-row: 1;
+      justify-self: center; }
 
   .item-more__title {
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 20px;
-    text-transform: uppercase;
-    grid-column: 1/-1;
-    grid-row: 2;
-    text-align: center;
-    margin: 0; }
+    font-size: 20px;
+    grid-row: 2; }
 
   .item-more__description {
-    grid-column: 1/-1;
-    grid-row: 3;
-    font: 12px/16px Arial, sans-serif;
-    color: #444444;
-    text-align: center;
-    margin-bottom: 20px; }
-
-  .item-more__button {
-    grid-column: 1/-1;
-    grid-row: 4;
-    background-color: #f2f2f2;
-    color: black; } }
+    font: 16px/16px Arial, sans-serif; } }
 .optional-products {
   padding: 0 20px; }
 
@@ -630,6 +619,16 @@ body {
   display: flex;
   justify-content: space-between; }
 
+/**tablet****************************************************************************/
+@media all and (min-width: 768px) {
+  .optional-list {
+    padding: 0 10px; }
+
+  .optional-item__title {
+    font-size: 20px; }
+
+  .optional-item__description {
+    font: 16px/16px Arial, sans-serif; } }
 .banner {
   background: url("../resources/img/img-opt/catalog/mobile/gift-photo-mobile.jpg");
   width: 280px;
@@ -649,6 +648,27 @@ body {
   color: white;
   margin-top: 170px; }
 
+@media all and (min-width: 768px) {
+  .banner {
+    background: url("../resources/img/img-opt/catalog/tabl/gift-photo-tablet.jpg");
+    width: 708px;
+    height: 200px;
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    position: relative; }
+    .banner:before {
+      position: absolute;
+      content: url("../resources/img/img-opt/catalog/mobile/gift.svg");
+      width: 55px;
+      height: 60px;
+      top: 70px;
+      left: 110px; }
+
+  .banner-description {
+    text-align: center;
+    color: white;
+    margin-top: 70px; } }
 .contacts__description {
   padding: 20px;
   display: flex;

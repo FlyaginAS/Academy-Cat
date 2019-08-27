@@ -18,3 +18,28 @@
   color: white;
   margin-top: 170px;
 }
+@media all and (min-width: 768px) {
+  .banner{
+    background:url("../resources/img/img-opt/catalog/tabl/gift-photo-tablet.jpg");
+    width:708px;
+    height: 200px;
+    margin: 0;
+    margin-top:60px;
+    margin-bottom: 60px;
+    position: relative;
+    &:before{
+      position: absolute;
+      content:url("../resources/img/img-opt/catalog/mobile/gift.svg");
+      width:55px;
+      height: 60px;
+      top: 70px;
+      left: 110px;
+    }
+  }
+  .banner-description{
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+  }
+
+}
