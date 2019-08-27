@@ -61,3 +61,28 @@ grid-column: 1/-1;
 
   }
 }
+/**desktop**************************************************************************************/
+@media all and(min-width: 1440px) {
+  .catalog{
+    width:1440px;
+    grid-template-columns: repeat(4, 245px);
+    grid-column-gap: 80px;
+    padding:0 110px;
+  }
+  //.catalog__title-products{
+  //}
+  ////.catalog__list{
+  ////
+  ////}
+  .catalog__title-optional{
+    padding-left:0;
+    font-size: 36px;
+  }
+  //.optional-products{
+  //
+  //}
+  .banner{
+    grid-column: 4/5;
+  grid-row:5;
+  }
+}

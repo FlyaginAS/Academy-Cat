@@ -471,6 +471,21 @@ body {
   .catalog__title-optional {
     padding-left: 30px;
     font-size: 36px; } }
+/**desktop**************************************************************************************/
+@media all and (min-width: 1440px) {
+  .catalog {
+    width: 1440px;
+    grid-template-columns: repeat(4, 245px);
+    grid-column-gap: 80px;
+    padding: 0 110px; }
+
+  .catalog__title-optional {
+    padding-left: 0;
+    font-size: 36px; }
+
+  .banner {
+    grid-column: 4/5;
+    grid-row: 5; } }
 .catalog__list {
   padding: 0 20px; }
 
@@ -601,6 +616,14 @@ body {
 
   .item-more__description {
     font: 16px/16px Arial, sans-serif; } }
+/**desktop**************************************************************************************/
+@media all and (min-width: 1440px) {
+  .catalog__list {
+    grid-template-columns: repeat(4, 245px);
+    grid-column-gap: 80px; }
+
+  .catalog__list-item {
+    grid-template-columns: repeat(2, 80px); } }
 .optional-products {
   padding: 0 20px; }
 
@@ -629,6 +652,34 @@ body {
 
   .optional-item__description {
     font: 16px/16px Arial, sans-serif; } }
+/**desktop****************************************************************************/
+@media all and (min-width: 1440px) {
+  .optional-products {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px; }
+
+  .optional-list {
+    padding: 0 0;
+    grid-column: 1/4; }
+
+  .optional-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 80px; }
+
+  .optional-item__title {
+    font-size: 20px; }
+
+  .optional-item__description {
+    font: 16px/16px Arial, sans-serif;
+    width: 285px; }
+
+  .optional-button {
+    width: 245px;
+    grid-column: 3/4;
+    grid-row: 1; } }
 .banner {
   background: url("../resources/img/img-opt/catalog/mobile/gift-photo-mobile.jpg");
   width: 280px;
@@ -669,6 +720,27 @@ body {
     text-align: center;
     color: white;
     margin-top: 70px; } }
+@media all and (min-width: 1440px) {
+  .banner {
+    background: url("../resources/img/img-opt/catalog/desk/gift-photo-desktop.jpg") no-repeat;
+    width: 240px;
+    height: 220px;
+    margin: 0;
+    margin-top: -240px;
+    margin-bottom: 0px;
+    position: relative; }
+    .banner:before {
+      position: absolute;
+      content: url("../resources/img/img-opt/catalog/mobile/gift.svg");
+      width: 55px;
+      height: 60px;
+      top: 30px;
+      left: 90px; }
+
+  .banner-description {
+    text-align: center;
+    color: white;
+    margin-top: 110px; } }
 .contacts__description {
   padding: 20px;
   display: flex;

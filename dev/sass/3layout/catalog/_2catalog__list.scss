@@ -151,3 +151,13 @@
     font: 16px/16px Arial, sans-serif;
   }
 }
+/**desktop**************************************************************************************/
+@media all and(min-width: 1440px) {
+  .catalog__list{
+    grid-template-columns: repeat(4, 245px);
+    grid-column-gap: 80px;
+  }
+  .catalog__list-item{
+    grid-template-columns: repeat(2, 80px);
+  }
+}

@@ -42,3 +42,33 @@
 
   }
 }
+/**desktop****************************************************************************/
+@media all and(min-width: 1440px ) {
+  .optional-products{
+    padding:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+  }
+  .optional-list{
+    padding:0 0;
+    grid-column:1/4;
+  }
+  .optional-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+  }
+  .optional-item__title{
+    font-size:20px;
+  }
+  .optional-item__description{
+    font:16px/16px Arial, sans-serif;
+    width:285px;
+  }
+  .optional-button{
+    width:245px;
+    grid-column:3/4 ;
+    grid-row:1;
+  }
+}
