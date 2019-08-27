@@ -1,0 +1,33 @@
+.catalog{
+  width: 320px;
+  margin: 0 auto;
+  margin-top:-30px;
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+}
+.catalog__title-products{
+grid-column: 1/-1;
+  font-size:36px;
+  line-height: 36px;
+  font-weight: normal;
+  padding:25px 0 30px 0;
+  border: 1px solid #ededed;
+  border-right: none;
+  border-left: none;
+  text-align: center;
+}
+.catalog__list{
+  grid-column: 1/-1;
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+.catalog__title-optional{
+  grid-column: 1/-1;
+}
+.optional-products{
+  grid-column: 1/-1;
+}
+.banner{
+  grid-column: 1/-1;
+}
