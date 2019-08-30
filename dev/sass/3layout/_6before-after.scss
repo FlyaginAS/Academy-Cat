@@ -91,7 +91,9 @@ padding-left:15px;
 .before-after__button{
   font-size:16px;
   text-transform: uppercase;
-
+  &:hover{
+    cursor:pointer;
+  }
 }
 .before-after__button--before{
 }

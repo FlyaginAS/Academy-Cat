@@ -1010,6 +1010,8 @@ body {
 .before-after__button {
   font-size: 16px;
   text-transform: uppercase; }
+  .before-after__button:hover {
+    cursor: pointer; }
 
 .before-after__range {
   visibility: hidden;

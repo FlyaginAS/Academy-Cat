@@ -740,6 +740,8 @@ body {
   background-color: #68b738;
   color: white;
   text-transform: uppercase; }
+  .optional__submit:hover {
+    cursor: pointer; }
 
 .optional__footnote {
   font: 14px/14px Arial, sans-serif;
